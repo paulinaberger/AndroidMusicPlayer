@@ -7,12 +7,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by paulinaberger on 2017-04-01.
  */
 
-public class NotificationUtil {
+public class NotificationUtil extends AppCompatActivity {
 
     public static void showNotification(Context context, Song song) {
 
