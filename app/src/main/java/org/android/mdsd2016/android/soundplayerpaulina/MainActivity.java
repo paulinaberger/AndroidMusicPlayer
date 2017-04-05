@@ -53,10 +53,6 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
                 mLayoutManager.getOrientation());
         songListView.addItemDecoration(mDividerItemDecoration);
 
-        /* To simplify touch events on recycler view, I've used a class called RecyclerItemClickListener
-           It's just to simplify the touch events. I've used to to get to two main click events:
-           onItemClick() and onItemLongClick(). If you have any doubt about that class, feel free to contact me
-        */
         songListView.addOnItemTouchListener(new RecyclerItemClickListener(this, songListView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -120,15 +116,12 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
     }
 
     private void playSongAt(final int position) {
-        //Running the below code on a separate thread so that main thread doesn't take much load.
-        //You can remove the thread code and it will still work fine
+
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 currentPosition = position;
-                //The if statement handles if we should resume the current song or play the specified song chosen by user
-                //current song variable holds the current song title. If user chooses a song which matches current song and has been
-                //played once then we resume it
+
                 if (!mediaPlayer.isPlaying() && playedAtLeastOnce && chosenSong.equals(currentSong)) {
                     mediaPlayer.seekTo(length);
                     mediaPlayer.start();
@@ -162,12 +155,7 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
         playedAtLeastOnce = true;
     }
 
-    /*
-    Updates player control buttons depending upon the song playing.
-    If first song is playing, previous button is disabled,
-    if last song is playing, next button is disabled
-    Here again we are changing resource of play button because click on list item invokes this method
-     */
+
     public void updatePlayerControls() {
         if (mediaPlayer.isPlaying()) {
             playedAtLeastOnce = true;
@@ -199,9 +187,7 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         switch (item.getItemId()) {

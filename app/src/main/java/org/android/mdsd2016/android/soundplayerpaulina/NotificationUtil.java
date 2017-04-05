@@ -32,7 +32,6 @@ public class NotificationUtil extends AppCompatActivity {
 
         NotificationManager mNotificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        // mId allows you to update the notification later on.
         Notification notification = mBuilder.build();
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
         mNotificationManager.notify(0, notification);
