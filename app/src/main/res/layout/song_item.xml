@@ -16,7 +16,8 @@
         android:layout_centerVertical="true"
         android:layout_margin="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/img_artwork_place_holder_album_song" />
+        android:src="@drawable/img_artwork_place_holder_album_song"
+        android:contentDescription="" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +35,7 @@
             android:ellipsize="end"
             android:lines="1"
             android:text=""
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textSize="14dp"
             android:textColor="@android:color/black" />
 
         <TextView
@@ -45,7 +46,7 @@
             android:lines="1"
             android:padding="3dp"
             android:text=""
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textSize="12dp"
             android:textColor="@android:color/darker_gray" />
 
     </LinearLayout>

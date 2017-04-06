@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Initializing views and other classes
         init();
 
         //Adding objects to the list
-        mSongList.add(new Song("1", "song1.mp3", "04:00", "CAD", "Dummytex Dummytex Dummytex Dummytex Dummytex Dummytex ", 56.667083f, -110.101676f));
-        mSongList.add(new Song("2", "song2.mp3", "03:27", "CHILE", "Dummytex Dummytex Dummytex Dummytex Dummytex Dummytex ", -28.132082f, -70.375113f));
-        mSongList.add(new Song("3", "song3.mp3", "04:13", "CAD", "Dummytex Dummytex Dummytex Dummytex Dummytex Dummytex ", 56.667083f, -110.101676f));
+        mSongList.add(new Song("1", "bensoundbrazilsamba.mp3", "04:00", "CAD", "Samba is a Brazilian musical genre and dance style, with its roots in Africa via the West African slave trade and African religious traditions, particularly of Angola", 56.667083f, -110.101676f));
+        mSongList.add(new Song("2", "bensoundcountryboy.mp3", "03:27", "CHILE", "Country music is a genre of American popular music that originated in the Southern United States in the 1920s", -28.132082f, -70.375113f));
+        mSongList.add(new Song("3", "India.mp3", "04:13", "CAD", "The music of India includes multiple varieties of folk music, pop, and Indian classical music. India's classical music tradition, including Hindustani music and Carnatic, has a history spanning millennia and developed over several eras", 56.667083f, -110.101676f));
+        mSongList.add(new Song("4", "Little Planet.mp3", "04:13", "CAD", "The music of Iceland includes vibrant folk and pop traditions. Well-known artists from Iceland include medieval music group Voces Thules, alternative rock band The Sugarcubes, singers Björk and Emiliana Torrini, post-rock band Sigur Rós and indie folk/indie pop band Of Monsters and Men", 56.667083f, -110.101676f));
 
         //Setting up adapter and recycler view
         mSongListAdapter = new SongListAdapter(this, mSongList);

@@ -26,11 +26,11 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDxVTGT2Ecf-hFQ-I04QiVKlNnt-qLJtx4"/>
+            android:value="AIzaSyAldnsXgjW3KK44ZCPJ5ETewl3JSZ3v5n0"/>
 
         <activity
             android:name=".MapsActivity"
-            android:label="Map">
+            android:label="@string/title_activity_maps">
         </activity>
     </application>
 
