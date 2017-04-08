@@ -26,7 +26,9 @@
             android:layout_height="wrap_content"
             android:padding="7dp"
             android:text="@string/songs"
-            android:textSize="16sp"/>
+            android:textColor="?android:attr/editTextColor"
+            android:textSize="14sp"
+            tools:text="NEW RELEASES" />
 
         <View
             android:layout_width="match_parent"
@@ -48,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:background="@android:color/holo_blue_dark">
 
         <ImageButton
             android:id="@+id/btn_play"
@@ -56,8 +58,8 @@
             android:layout_height="@dimen/height_button"
             android:layout_centerHorizontal="true"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_play_arrow_white_48dp"
             android:contentDescription=""
+            android:src="@drawable/ic_play_arrow_white_48dp"
             tools:ignore="ContentDescription" />
 
         <ImageButton
@@ -67,7 +69,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginRight="@dimen/height_button"
             android:layout_toLeftOf="@id/btn_play"
-            android:background="@android:color/transparent"
+            android:background="@android:color/holo_blue_dark"
             android:src="@drawable/ic_skip_previous_white_36dp"
             tools:ignore="ContentDescription,RtlHardcoded" />
 
@@ -78,10 +80,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="@dimen/height_button"
             android:layout_toRightOf="@id/btn_play"
-            android:background="@android:color/transparent"
+            android:background="@android:color/holo_blue_dark"
+            android:contentDescription=""
             android:src="@drawable/ic_skip_next_white_36dp"
-            tools:ignore="ContentDescription,RtlHardcoded"
-            android:contentDescription="" />
+            tools:ignore="ContentDescription,RtlHardcoded" />
 
     </RelativeLayout>
 

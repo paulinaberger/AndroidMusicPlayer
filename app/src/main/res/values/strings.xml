@@ -1,5 +1,5 @@
 <resources>
-<string name="app_name">SoundPlayerPaulina</string>
+<string name="app_name">Listen to some tunes...</string>
 <string name="title_activity_maps">Map</string>
     <string name="songs">Songs</string>
     <string name="country">Country:</string>

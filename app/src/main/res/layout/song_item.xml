@@ -11,13 +11,13 @@
         android:id="@+id/song_track_cover"
         android:layout_width="@dimen/height_button"
         android:layout_height="@dimen/height_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="10dp"
+        android:contentDescription=""
+        android:padding="7dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/img_artwork_place_holder_album_song"
-        android:contentDescription="" />
+        android:src="@drawable/img_art_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +26,8 @@
         android:layout_toEndOf="@+id/song_track_cover"
         android:layout_toRightOf="@+id/song_track_cover"
         android:orientation="vertical"
-        android:padding="3dp">
+        android:padding="5dp"
+        android:paddingRight="5dp">
 
         <TextView
             android:id="@+id/song_track_title"
@@ -35,8 +36,8 @@
             android:ellipsize="end"
             android:lines="1"
             android:text=""
-            android:textSize="14dp"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/song_track_duration"
@@ -46,8 +47,8 @@
             android:lines="1"
             android:padding="3dp"
             android:text=""
-            android:textSize="12dp"
-            android:textColor="@android:color/darker_gray" />
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp" />
 
     </LinearLayout>
 
