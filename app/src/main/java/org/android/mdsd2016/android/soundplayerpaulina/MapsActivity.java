@@ -31,15 +31,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -47,6 +39,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
          LatLng markerLoc = new LatLng(getIntent().getFloatExtra("lat", 0f), getIntent().getFloatExtra("lng", 0f));
         mMap.addMarker(new MarkerOptions().position(markerLoc).title("Song's Location"));
         //Animating the camera to zoom. Try changing the second argument "12.0f" for different zoom level
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markerLoc, 12.0f));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markerLoc, 9.0f));
     }
 }
