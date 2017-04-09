@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.android.mdsd2016.android.soundplayerpaulina.MainActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/ll_title"
@@ -22,12 +18,11 @@
             android:background="@android:color/darker_gray"/>
 
         <TextView
-            android:layout_width="367dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:text="@string/songs"
-            android:textColor="?android:attr/editTextColor"
-            android:textSize="14sp"
+            android:text="NEW RELEASES"
+            android:textSize="16sp"
             tools:text="NEW RELEASES" />
 
         <View
@@ -50,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/holo_blue_dark">
+        android:background="@color/colorPrimary">
 
         <ImageButton
             android:id="@+id/btn_play"
@@ -58,9 +53,7 @@
             android:layout_height="@dimen/height_button"
             android:layout_centerHorizontal="true"
             android:background="@android:color/transparent"
-            android:contentDescription=""
-            android:src="@drawable/ic_play_arrow_white_48dp"
-            tools:ignore="ContentDescription" />
+            android:src="@drawable/ic_play_arrow_white_48dp"/>
 
         <ImageButton
             android:id="@+id/btn_prev"
@@ -69,9 +62,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginRight="@dimen/height_button"
             android:layout_toLeftOf="@id/btn_play"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@android:color/transparent"
             android:src="@drawable/ic_skip_previous_white_36dp"
-            tools:ignore="ContentDescription,RtlHardcoded" />
+            tools:ignore="RtlHardcoded" />
 
         <ImageButton
             android:id="@+id/btn_next"
@@ -80,12 +73,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="@dimen/height_button"
             android:layout_toRightOf="@id/btn_play"
-            android:background="@android:color/holo_blue_dark"
-            android:contentDescription=""
-            android:src="@drawable/ic_skip_next_white_36dp"
-            tools:ignore="ContentDescription,RtlHardcoded" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_skip_next_white_36dp"/>
 
     </RelativeLayout>
-
-
 </RelativeLayout>
