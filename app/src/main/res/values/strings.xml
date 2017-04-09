@@ -3,4 +3,6 @@
 <string name="title_activity_maps">Map</string>
     <string name="songs">Songs:</string>
     <string name="country">Country:</string>
+    <string name="comment">Comment:</string>
+    <string name="new_releases">NEW RELEASES</string>
 </resources>
