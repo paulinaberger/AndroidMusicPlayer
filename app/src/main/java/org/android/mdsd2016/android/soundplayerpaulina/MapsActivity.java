@@ -39,6 +39,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
          LatLng markerLoc = new LatLng(getIntent().getFloatExtra("lat", 0f), getIntent().getFloatExtra("lng", 0f));
         mMap.addMarker(new MarkerOptions().position(markerLoc).title("Song's Location"));
         //Animating the camera to zoom. Try changing the second argument "12.0f" for different zoom level
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markerLoc, 9.0f));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markerLoc, 2.0f));
     }
 }

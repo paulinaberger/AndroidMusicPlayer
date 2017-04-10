@@ -17,7 +17,7 @@
         android:contentDescription=""
         android:padding="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/img_art_holder" />
+        android:src="@drawable/img_artwork_place_holder_album_song" />
 
     <LinearLayout
         android:layout_width="match_parent"
