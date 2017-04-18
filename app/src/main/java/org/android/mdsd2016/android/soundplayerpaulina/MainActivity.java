@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
         mSongList.add(new Song("3", "India.mp3", "04:13", "India", "The music of India includes multiple " +
                 "varieties of folk music, pop, and Indian classical music. India's classical music tradition, " +
                 "including Hindustani music and Carnatic, has a history spanning millennia and developed over " +
-                "several eras", 56.667083f, -110.101676f));
+                "several eras", 20.5937f, 78.9629f));
         mSongList.add(new Song("4", "Little Planet.mp3", "06:36", "Iceland", "The music of Iceland includes vibrant " +
                 "folk and pop traditions. Well-known artists from Iceland include medieval music group " +
                 "Voces Thules, alternative rock band The Sugarcubes, singers Björk and Emiliana Torrini, " +
